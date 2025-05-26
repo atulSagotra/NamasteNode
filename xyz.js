@@ -1,1 +1,1 @@
-console.log('Very Important Js Code.')
+console.log('Very Important Js Code.');

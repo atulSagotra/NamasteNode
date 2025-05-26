@@ -1,21 +1,21 @@
-const fs = require("fs");
+const fs = require('fs');
 
 const a = 100;
 
 setImmediate(() => console.log('setImediate'));
 
-Promise.resolve("Promise").then(() => console.log("Promise"));
+Promise.resolve('Promise').then(() => console.log('Promise'));
 
 fs.readFile('./file.txt', 'utf-8', (data) => {
-    console.log('File reading CB', data);
-})
+  console.log('File reading CB', data);
+});
 
 setTimeout(() => console.log('Timer expired'), 10);
 
-process.nextTick(() => console.log("Process.nextTick"))
+process.nextTick(() => console.log('Process.nextTick'));
 
 function printA() {
-    console.log("a = ", a);
+  console.log('a = ', a);
 }
-printA()
+printA();
 console.log('End of the file');

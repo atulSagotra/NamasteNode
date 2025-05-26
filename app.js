@@ -1,10 +1,10 @@
-require('./xyz.js')
+require('./xyz.js');
 
-const { calculateSum, calculateMultiply  } = require('./calculate');
+const { calculateSum, calculateMultiply } = require('./calculate');
 
-const data = require('./data.json')
+const data = require('./data.json');
 
-var name = 'Namaste NodeJS'
+var name = 'Namaste NodeJS';
 
 var a = 10;
 
@@ -16,4 +16,3 @@ console.log(data);
 
 calculateSum(a, b);
 calculateMultiply(a, b);
-

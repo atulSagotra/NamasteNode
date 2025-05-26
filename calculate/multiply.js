@@ -1,10 +1,9 @@
-
 function calculateMultiply(a, b) {
-    const sum = a * b;
+  const sum = a * b;
 
-    console.log(sum);
+  console.log(sum);
 }
 
 module.exports = {
-    calculateMultiply: calculateMultiply
+  calculateMultiply: calculateMultiply,
 };

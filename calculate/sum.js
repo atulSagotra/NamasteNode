@@ -1,10 +1,9 @@
-
 function calculateSum(a, b) {
-    const sum = a + b;
+  const sum = a + b;
 
-    console.log(sum);
+  console.log(sum);
 }
 
 module.exports = {
-    calculateSum: calculateSum
+  calculateSum: calculateSum,
 };

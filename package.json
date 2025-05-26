@@ -1,6 +1,18 @@
 {
-    "type": "commonjs",
-    "dependencies": {
-        "mongodb": "^6.15.0"
-    }
+  "type": "commonjs",
+  "dependencies": {
+    "mongodb": "^6.15.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
+    "prettier": "^3.5.3"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prettier:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "prettier:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "build": "npm run lint && npm run prettier:check && <your-existing-build-command>"
+  }
 }
